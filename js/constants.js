@@ -126,10 +126,10 @@ var JAPPIX_MAX_UPLOAD = null;
 var SERVICE_NAME = null;
 var SERVICE_DESC = null;
 var OWNER_NAME = null;
-var OWNER_WEBSITE = null;
+var OWNER_WEBSITE = 'http://www.starshine-online.com';
 var LEGAL = null;
 var JAPPIX_RESOURCE = null;
-var LOCK_HOST = null;
+var LOCK_HOST = true;
 var ANONYMOUS = null;
 var HTTP_AUTH = null;
 var REGISTRATION = null;
@@ -146,7 +146,7 @@ var DEVELOPER = null;
 var REGISTER_API = null;
 
 // Jappix hosts configuration
-var HOST_MAIN = null;
+var HOST_MAIN = 'jabber.starshine-online.com';
 var HOST_MUC = null;
 var HOST_PUBSUB = null;
 var HOST_VJUD = null;
