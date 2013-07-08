@@ -71,9 +71,6 @@ if(!anonymousMode() && !httpAuthEnabled()) { ?>
 			<div class="mainview">
 				<div class="left">
 					<div class="home-images logo"></div>
-					<p class="upper"><?php _e("Communicate with the entire world!"); ?></p>
-					<p class="secondary"><?php _e("Jappix is an open social platform, that let's you easily get or keep in touch with everyone."); ?></p>
-					<p class="secondary"><?php _e("Join the millions of users who are currently using the XMPP Network (Google Talk, etc), don't stay out!"); ?></p>
 				</div>
 				
 				<div class="right">
@@ -82,21 +79,11 @@ if(!anonymousMode() && !httpAuthEnabled()) { ?>
 					<div class="default homediv">
 						<p><?php printf(T_("Welcome on %1s, “%2s”."), htmlspecialchars(SERVICE_NAME), htmlspecialchars(SERVICE_DESC)); ?></p>
 						
-						<p><?php _e("Login to your existing XMPP account or create a new one for free!"); ?></p>
-						
 						<button class="login buttons-images">
 							<span class="home-images"></span>
 							<span class="text"><?php _e("Login"); ?></span>
 						</button>
-						
-						<button class="register buttons-images">
-							<span class="home-images"></span>
-							<span class="text"><?php _e("Register"); ?></span>
-						</button>
-						
-						<p class="notice"><?php _e("For your account safety, when you login or register, make sure your password remains secret."); ?></p>
-					</div>
-					
+											
 					<div class="navigation">
 						<?php
 						
@@ -147,33 +134,6 @@ if(!anonymousMode() && !httpAuthEnabled()) { ?>
 		
 		<div class="home-images corporation">
 			<div class="corp_network">
-				<h2 class="nomargin">Jappix.com</h2>
-				<div class="tabulate">
-					<a href="https://jappix.com/">
-						<span class="name">Jappix</span>
-						<span class="desc"><?php _e("Social channel, chat and more."); ?></span>
-					</a>
-					<a href="https://me.jappix.com/">
-						<span class="name">Jappix Me</span>
-						<span class="desc"><?php _e("Create your public profile."); ?></span>
-					</a>
-					<a href="https://mini.jappix.com/">
-						<span class="name">Jappix Mini</span>
-						<span class="desc"><?php _e("A mini-chat for your website."); ?></span>
-					</a>
-					<a href="https://project.jappix.com/">
-						<span class="name">Jappix Project</span>
-						<span class="desc"><?php _e("Get Jappix, get support."); ?></span>
-					</a>
-					<a href="https://stats.jappix.com/">
-						<span class="name">Jappix Stats</span>
-						<span class="desc"><?php _e("Statistics around Jappix."); ?></span>
-					</a>
-					<a href="https://legal.jappix.com/">
-						<span class="name">Jappix Legal</span>
-						<span class="desc"><?php _e("Legal disclaimer for Jappix."); ?></span>
-					</a>
-				</div>
 				
 				<h2>Jappix.org</h2>
 				<div class="tabulate">
@@ -184,14 +144,6 @@ if(!anonymousMode() && !httpAuthEnabled()) { ?>
 					<a href="http://developer.jappix.org/">
 						<span class="name">Jappix Developer</span>
 						<span class="desc"><?php _e("Contribute to the Jappix code."); ?></span>
-					</a>
-				</div>
-				
-				<h2>Jappix.pro</h2>
-				<div class="tabulate">
-					<a href="http://jappix.pro/">
-						<span class="name">Jappix Pro</span>
-						<span class="desc"><?php _e("Jappix for your company."); ?></span>
 					</a>
 				</div>
 				

@@ -53,13 +53,13 @@ function switchHome(div) {
 		// Login tool
 		case 'loginer':
 			lock_host = disableInput(LOCK_HOST, 'on');
-			code = '<p>' + printf(_e("Login to your existing XMPP account. You can also use the %s to join a groupchat."), '<a href="#" class="to-anonymous">' + _e("anonymous mode") + '</a>') + '</p>' + 
+			code = '<p>' + printf(_e("Login to your account.")) + '</p>' + 
 				
 				'<form action="#" method="post">' + 
 					'<fieldset>' + 
 						'<legend>' + _e("Required") + '</legend>' + 
 						
-						'<label for="lnick">' + _e("Address") + '</label>' + 
+						'<label for="lnick">' + _e("Nickname") + '</label>' + 
 						'<input type="text" class="nick" id="lnick" pattern="[^@/]+" required="" /><span class="jid">@</span><input type="text" class="server" id="lserver" value="' + HOST_MAIN + '" ' + lock_host + ' pattern="[^@/]+" required="" />' + 
 						'<label for="lpassword">' + _e("Password") + '</label>' + 
 						'<input type="password" class="password" id="lpassword" required="" />' + 
@@ -131,7 +131,7 @@ function switchHome(div) {
 					'<fieldset>' + 
 						'<legend>' + _e("Required") + '</legend>' + 
 						
-						'<label for="rnick">' + _e("Address") + '</label>' + 
+						'<label for="rnick">' + _e("Nickname") + '</label>' + 
 						'<input type="text" class="nick" id="rnick" ' + disable_form + ' pattern="[^@/]+" required="" placeholder="' + _e("Username") + '" /><span class="jid">@</span><input type="text" class="server" id="rserver" value="' + HOST_MAIN + '" ' + disable_form + lock_host + ' pattern="[^@/]+" required="" placeholder="' + _e("Server") + '" />' + 
 						'<label for="rpassword">' + _e("Password") + '</label>' + 
 						'<input type="password" class="password" id="rpassword" ' + disable_form + ' required="" placeholder="' + _e("Enter password") + '" /><input type="password" class="spassword" id="spassword" ' + disable_form + ' required="" placeholder="' + _e("Once again...") + '" />';
