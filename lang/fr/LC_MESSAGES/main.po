@@ -358,7 +358,7 @@ msgid "Complete name"
 msgstr "Nom complet"
 
 msgid "Nickname"
-msgstr "Pseudonyme"
+msgstr "Pseudo"
 
 msgid "First name"
 msgstr "Prénom"
@@ -862,6 +862,11 @@ msgid ""
 msgstr ""
 "Connectez-vous à votre compte XMPP existant. Vous pouvez aussi utiliser le "
 "%s pour rejoindre un salon."
+
+msgid ""
+"Login to your account."
+msgstr ""
+"Connectez-vous à votre compte."
 
 msgid "Previous"
 msgstr "Précédent"

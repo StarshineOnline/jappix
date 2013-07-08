@@ -71,9 +71,6 @@ if(!anonymousMode() && !httpAuthEnabled()) { ?>
 			<div class="mainview">
 				<div class="left">
 					<div class="home-images logo"></div>
-					<p class="upper"><?php _e("Communicate with the entire world!"); ?></p>
-					<p class="secondary"><?php _e("Jappix is an open social platform, that let's you easily get or keep in touch with everyone."); ?></p>
-					<p class="secondary"><?php _e("Join the millions of users who are currently using the XMPP Network (Google Talk, etc), don't stay out!"); ?></p>
 				</div>
 				
 				<div class="right">
@@ -82,21 +79,11 @@ if(!anonymousMode() && !httpAuthEnabled()) { ?>
 					<div class="default homediv">
 						<p><?php printf(T_("Welcome on %1s, “%2s”."), htmlspecialchars(SERVICE_NAME), htmlspecialchars(SERVICE_DESC)); ?></p>
 						
-						<p><?php _e("Login to your existing XMPP account or create a new one for free!"); ?></p>
-						
 						<button class="login buttons-images">
 							<span class="home-images"></span>
 							<span class="text"><?php _e("Login"); ?></span>
 						</button>
-						
-						<button class="register buttons-images">
-							<span class="home-images"></span>
-							<span class="text"><?php _e("Register"); ?></span>
-						</button>
-						
-						<p class="notice"><?php _e("For your account safety, when you login or register, make sure your password remains secret."); ?></p>
-					</div>
-					
+											
 					<div class="navigation">
 						<?php
 						
