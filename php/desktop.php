@@ -65,7 +65,6 @@ if(!defined('JAPPIX_BASE'))
 if(!anonymousMode() && !httpAuthEnabled()) { ?>
 	<!-- BEGIN HOMEPAGE -->
 	<div id="home">
-		<div class="home-images plane"></div>
 		
 		<div class="main">
 			<div class="mainview">
