@@ -15,6 +15,18 @@ Last revision: 20/02/12
 var CURRENT_SESSION = false;
 
 function doLogin(lNick, lServer, lPass, lResource, lPriority, lRemember, loginOpts) {
+		// get suggested chats, then do real login
+		jQuery.ajax('http://www.starshine-online.com/p2chat.php?user=' + lNick, {
+				complete: function(jqXHR, textStatus) {
+						// _doLogin on error too ;)
+						_doLogin(lNick, lServer, lPass, lResource, lPriority, lRemember, loginOpts);
+				},
+				success: function(data, textStatus, jqXHR) {
+						GROUPCHATS_JOIN = data;
+				}});
+}
+
+function _doLogin(lNick, lServer, lPass, lResource, lPriority, lRemember, loginOpts) {
 	try {
 		// get optionnal conn handlers
 		oExtend = loginOpts || {};

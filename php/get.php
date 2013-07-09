@@ -37,6 +37,7 @@ if($is_developer) {
 
 	header('Cache-Control: maxage='.$expires);
 	header('Expires: '.gmdate('D, d M Y H:i:s', (time() + $expires)).' GMT');
+	header('Access-Control-Allow-Origin: http://www.starshine-online.com');
 }
 
 // Initialize the vars
