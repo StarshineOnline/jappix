@@ -801,7 +801,7 @@ function staticURL() {
 		$port_section = null;
 		$port_value = isset($_SERVER['SERVER_PORT']) && is_numeric($_SERVER['SERVER_PORT']) ? intval($_SERVER['SERVER_PORT']) : null;
 
-		if(($port_value != null) && (($protocol == 'http') && ($port_value != 80)) || (($protocol == 'https') && ($port_value != 443)))
+		if(($port_value != null) && (($protocol == 'http') && ($port_value != 80)) || (($protocol == 'https') && ($port_value != 443) && ($port_value != 80)))
 			$port_section = ':'.$port_value;
 
 		// Full URL

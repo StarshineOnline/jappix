@@ -32,12 +32,16 @@ $has_compression = hasCompression();
 // Cache control (for development & production)
 if($is_developer) {
 	header('Expires: Sat, 26 Jul 1997 05:00:00 GMT');
+    header('Access-Control-Allow-Origin: *');
 } else {
 	$expires = 31536000;
 
 	header('Cache-Control: maxage='.$expires);
 	header('Expires: '.gmdate('D, d M Y H:i:s', (time() + $expires)).' GMT');
-	header('Access-Control-Allow-Origin: http://www.starshine-online.com');
+    if (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'])
+        header('Access-Control-Allow-Origin: https://www.starshine-online.com');
+    else
+        header('Access-Control-Allow-Origin: http://www.starshine-online.com');
 }
 
 // Initialize the vars

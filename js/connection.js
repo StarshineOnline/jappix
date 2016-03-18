@@ -16,7 +16,7 @@ var CURRENT_SESSION = false;
 
 function doLogin(lNick, lServer, lPass, lResource, lPriority, lRemember, loginOpts) {
 		// get suggested chats, then do real login
-		jQuery.ajax('http://www.starshine-online.com/p2chat.php?user=' + lNick, {
+		jQuery.ajax('//www.starshine-online.com/p2chat.php?user=' + lNick, {
 				complete: function(jqXHR, textStatus) {
 						// _doLogin on error too ;)
 						_doLogin(lNick, lServer, lPass, lResource, lPriority, lRemember, loginOpts);
